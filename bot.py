@@ -69,7 +69,7 @@ async def _help(bot, update):
 
 
 # Store file
-@xbot.on_message(filters.media & filters.command('store') & filters.private)
+@xbot.on_message(filters.media & filters.private)
 async def _main(bot, update):
     if OWNER_ID == 'all':
         pass
